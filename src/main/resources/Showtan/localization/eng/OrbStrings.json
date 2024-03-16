@@ -1,0 +1,49 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Orb Name",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, draw #b",
+      " card.",
+      " cards.",
+      " NL #yEvoke: Deal #b",
+      " damage to all enemies."
+    ]
+  },
+  "${modID}:WeedleOrb": {
+    "NAME": "Specs Weedle",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, deal #b",
+      " damage to all enemies.",
+      " NL #yEvoke: Deal #b",
+      " damage to all enemies."
+    ]
+  },
+  "${modID}:TotemOrb": {
+    "NAME": "Blood Totem",
+    "DESCRIPTION": [
+      "#yPassive: At the start of your turn, gain #b",
+      " block.",
+      " NL #yEvoke: Deal #b",
+      " damage to the enemy with the lowest HP.",
+      " NL Gains #b",
+      " damage each turn."
+    ]
+  },
+  "${modID}:BraveOrb": {
+    "NAME": ";_;7",
+    "DESCRIPTION": [
+      "#yPassive: Ready to make the ultimate sacrifice.",
+      " NL #yEvoke: Deal #b",
+      " damage to the enemy with the lowest HP."
+    ]
+  },
+  "${modID}:KoffingOrb": {
+    "NAME": "Dogars",
+    "DESCRIPTION": [
+      "#yPassive: Inflict #b",
+      " Poison to ALL enemies.",
+      " NL #yEvoke: Inflict #b",
+      " Poison to ALL enemies."
+    ]
+  }
+}

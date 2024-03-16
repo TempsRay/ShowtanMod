@@ -1,0 +1,39 @@
+{
+  "${modID}:PotionID": {
+    "NAME": "Some Kind of Potion",
+    "DESCRIPTIONS": [
+      "Little",
+      " pieces ",
+      "that get put together",
+      " into a description.",
+      " Exactly how depends on the potion, and you can set it up however you want."
+    ]
+  },
+  "${modID}:BravePotion": {
+    "NAME": "Brave Potion",
+    "DESCRIPTIONS": [
+      "Channel #b",
+      " #y${modID}:Brave orbs."
+    ]
+  },
+  "${modID}:WorkUpPotion": {
+    "NAME": "Work Up Potion",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " Strength and Focus"
+    ]
+  },
+  "${modID}:ClearMindPotion": {
+    "NAME": "Clear Mind Potion",
+    "DESCRIPTIONS": [
+      "Remove Debuffs."
+    ]
+  },
+  "${modID}:Jarate": {
+    "NAME": "Jarate",
+    "DESCRIPTIONS": [
+      "Apply #b",
+      " Weak, Vulnerable, and Poison to target."
+    ]
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! Damage."
+  },
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "${modID}:DrunkenFist": {
+    "NAME": "Drunken Fist",
+    "DESCRIPTION": "Deal !D! Damage. Gain !M! Weak."
+  },
+  "${modID}:NumbThePain": {
+    "NAME": "Numb The Pain",
+    "DESCRIPTION": "Gain !B! Block. Shuffle a Dazed into your draw pile."
+  },
+  "${modID}:CockyHelmet": {
+    "NAME": "Cocky Helmet",
+    "DESCRIPTION": "Gain !M! Metallicize. Gain !M! Thorns."
+  },
+  "${modID}:Sleeping": {
+    "NAME": "Rest",
+    "DESCRIPTION": "Gain !B! Block. Cannot gain Block for the rest of the turn."
+  },
+  "${modID}:SpikyShield": {
+    "NAME": "Spiky Shield",
+    "DESCRIPTION": "Gain !B! Block. Whenever you are attacked this turn, deal !M! damage back."
+  },
+  "${modID}:Donnel": {
+    "NAME": "Donnel",
+    "DESCRIPTION": "Deal !D! damage. If Fatal, permanently increase this card's damage by !M!. NL Exhaust."
+  },
+  "${modID}:FinalForm": {
+    "NAME": "Final Form",
+    "DESCRIPTION": "Gain !M! Strength. Gain !M! Dexterity. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength. Gain !M! Dexterity."
+  },
+  "${modID}:AnotherDrink": {
+    "NAME": "Another Drink",
+    "DESCRIPTION": "Gain a potion. Gain !M! Vulnerable. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain a potion. NL Exhaust."
+  },
+  "${modID}:Weedle": {
+    "NAME": "Summon Weedle",
+    "DESCRIPTION": "Deal !D! damage. Channel a ${modID}:Weedle."
+  },
+  "${modID}:Burp": {
+    "NAME": "Burp",
+    "DESCRIPTION": "Deal !M! damage to ALL enemies whenever a card is exhausted."
+  },
+  "${modID}:Podracing": {
+    "NAME": "Podracing",
+    "DESCRIPTION": "Gain !B! Block next turn."
+  },
+  "${modID}:Leftovers": {
+    "NAME": "Leftovers",
+    "DESCRIPTION": "Gain !M! Regen."
+  },
+  "${modID}:Dabears100": {
+    "NAME": "Dabears100",
+    "DESCRIPTION": "Channel !M! Lightning."
+  },
+  "${modID}:SuckerPunch": {
+    "NAME": "Sucker Punch",
+    "DESCRIPTION": "Deal !D! damage. Only works if the enemy intends to attack."
+  },
+  "${modID}:BloodTotem": {
+    "NAME": "Blood Totem",
+    "DESCRIPTION": "Gain !B! Block. Channel 2 ${modID}:Totem orbs."
+  },
+  "${modID}:PapaRoach": {
+    "NAME": "Papa Roach",
+    "DESCRIPTION": "Deal !D! Damage. Gains !M! Damage for the rest of combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. Gains !M! Damage for the rest of combat. NL Innate"
+  },
+  "${modID}:KingsShield": {
+    "NAME": "King's Shield",
+    "DESCRIPTION": "Gain !B! Block. If the enemy intends to attack, inflict !M! Weak."
+  },
+  "${modID}:AcidArmor": {
+    "NAME": "Acid Armor",
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Artifact. NL Exhaust."
+  },
+  "${modID}:BoobooKeys": {
+    "NAME": "Booboo Keys",
+    "DESCRIPTION": "Enemy gains 1 Strength and !M! Vulnerable. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Enemy gains 1 Strength and !M! Vulnerable twice. NL Exhaust."
+  },
+  "${modID}:BoostanRoostan": {
+    "NAME": "Boostan Roostan",
+    "DESCRIPTION": "Draw !M! card. Channel 1 ${modID}:Totem Orb.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. Channel 1 ${modID}:Totem Orb."
+  },
+  "${modID}:AggronMaid": {
+    "NAME": "Aggron Maid",
+    "DESCRIPTION": "Gain !B! Block. Draw 2 more cards next turn."
+  },
+  "${modID}:BangTheDrum": {
+    "NAME": "Bang The Drum",
+    "DESCRIPTION": "Lose 2 HP. Gain !M! Strength."
+  },
+  "${modID}:SoBrave": {
+    "NAME": "So Brave",
+    "DESCRIPTION": "Deal !D! damage. Channel 1 ${modID}:Brave orb."
+  },
+  "${modID}:FocusBlast": {
+    "NAME": "Focus Blast",
+    "DESCRIPTION": "Deal !D! damage. Has a 30% of missing."
+  },
+  "${modID}:FastPoke": {
+    "NAME": "Fast Poke",
+    "DESCRIPTION": "Gain !M! temporary Dexterity."
+  },
+  "${modID}:Ducke": {
+    "NAME": "Ducke",
+    "DESCRIPTION": "Deal !D! damage. Channel 1 ${modID}:Totem Orb."
+  },
+  "${modID}:Metronome": {
+    "NAME": "Metronome",
+    "DESCRIPTION": "Add  a random card to your hand. NL It costs 0 this turn. NL Exhaust."
+  },
+  "${modID}:BanEvasion": {
+    "NAME": "Ban Evasion",
+    "DESCRIPTION": "Remove all debuffs. NL Exhaust."
+  },
+  "${modID}:Weedles": {
+    "NAME": "Weedles",
+    "DESCRIPTION": "Channel X ${modID}:Weedle Orbs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Channel X+1 ${modID}:Weedle Orbs. NL Exhaust."
+  },
+  "${modID}:Celebrate": {
+    "NAME": "Celebrate!",
+    "DESCRIPTION": "Gain !M! Gold. NL Exhaust."
+  },
+  "${modID}:NewChamp": {
+    "NAME": "New Champ!",
+    "DESCRIPTION": "Discard your hand. Remove all orbs. Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard your hand. Evoke all orbs. Draw !M! cards. NL Exhaust."
+  },
+  "${modID}:FirstWeedle": {
+    "NAME": "First!",
+    "DESCRIPTION": "Channel !M! ${modID}:Weedle Orb.",
+    "UPGRADE_DESCRIPTION": "Channel !M! ${modID}:Weedle Orbs."
+  },
+  "${modID}:Scald": {
+    "NAME": "Scald",
+    "DESCRIPTION": "Deal !D! damage. Inflict !M! Weak and Vulnerable."
+  },
+  "${modID}:RepeatingDigits": {
+    "NAME": "Check em!",
+    "DESCRIPTION": "Gain !B! Block and deal !D! damage X times."
+  },
+  "${modID}:Funbro": {
+    "NAME": "Funbro",
+    "DESCRIPTION": "Deal !D! damage. Retain your hand next turn."
+  },
+  "${modID}:Dogars": {
+    "NAME": "D O G A R S",
+    "DESCRIPTION": "Deal !D! damage. Channel 1 ${modID}:Koffing orb."
+  },
+  "${modID}:FemaleOnly": {
+    "NAME": "Female Only",
+    "DESCRIPTION": "Deal !D! damage. Enemy loses !M! Strength this turn."
+  },
+  "${modID}:Button": {
+    "NAME": "Button",
+    "DESCRIPTION": "Deal !D! damage. Gain 1 Vulnerable. Shuffle this back into your draw pile but it deals !M! more damage this combat."
+  },
+  "${modID}:DaysInIndia": {
+    "NAME": "184 Days In India",
+    "DESCRIPTION": "Retain. Deal !D! damage. When Retained, increase damage by !M! this combat."
+  },
+  "${modID}:BanefulBunker": {
+    "NAME": "Baneful Bunker",
+    "DESCRIPTION": "Gain !B! Block. Inflict !M! Poison."
+  },
+  "${modID}:Greed": {
+    "NAME": "Greed",
+    "DESCRIPTION": "Draw 1 extra card per turn. Gain !M! Vulnerable."
+  },
+  "${modID}:Shedinja": {
+    "NAME": "Black Sludge Shedinja",
+    "DESCRIPTION": "Gain 1 Intangible. Gain !M! Poison."
+  },
+  "${modID}:Shreckle": {
+    "NAME": "Shreckle",
+    "DESCRIPTION": "Gain !M! Strength each turn. Lose 1 Dexterity each turn."
+  },
+  "${modID}:FoulPlay": {
+    "NAME": "Foul Play",
+    "DESCRIPTION": "Temporarily gain the enemy's Strength this turn. Deal !D! Damage."
+  },
+  "${modID}:Gaston": {
+    "NAME": "Gaston",
+    "DESCRIPTION": "Deal !D! Damage. Channel 1 ${modID}:Brave orb. Exhaust."
+  },
+  "${modID}:Paraflinch": {
+    "NAME": "Paraflinch",
+    "DESCRIPTION": "Deal !D! Damage. NL If you have any debuffs draw a card and gain [E]."
+  },
+  "${modID}:SolidSuggester": {
+    "NAME": "Solid Suggester",
+    "DESCRIPTION": "Deal !D! Damage to ALL enemies. NL Costs !M! for the rest of combat after taking damage."
+  },
+  "${modID}:Training": {
+    "NAME": "Training",
+    "DESCRIPTION": "Gain !M! Focus."
+  },
+  "${modID}:PukeBlood": {
+    "NAME": "Puke Blood",
+    "DESCRIPTION": "Take 2 Damage. Inflict !M! Poison."
+  },
+  "${modID}:Hellfrog": {
+    "NAME": "Hellfrog",
+    "DESCRIPTION": "Deal !D! Damage to ALL enemies. Exhaust a card from your hand at random.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage to ALL enemies. Choose a card to Exhaust from your hand."
+  },
+  "${modID}:Toxic": {
+    "NAME": "Toxic",
+    "DESCRIPTION": "Inflict !M! Poison. Channel a ${modID}:Koffing."
+  },
+  "${modID}:ProudOfItsPower": {
+    "NAME": "Stand Proud",
+    "DESCRIPTION": "When you take damage from your own card or when you get debuffed, draw !M! card.",
+    "UPG_DESCRIPTION": "When you take damage from your own card or when you get debuffed, draw !M! cards."
+  },
+  "${modID}:OUStall": {
+    "NAME": "OU Stall",
+    "DESCRIPTION": "Gain !B! Block. NL Channel a ${modID}:Koffing. NL Add a card from your discard pile to the top of your deck."
+  },
+  "${modID}:ArceusRuse": {
+    "NAME": "Arceus-Ruse",
+    "DESCRIPTION": "All enemies lose !M! Strength and gain !M! Weak. NL Exhaust."
+  },
+  "${modID}:Fug": {
+    "NAME": "Fug",
+    "DESCRIPTION": "Deal !D! Damage to ALL enemies. Gain !M! Frail."
+  },
+  "${modID}:Reshiram": {
+    "NAME": "Lubby Chudder",
+    "DESCRIPTION": "Deal !D! Damage !M! times. Add 2 Burns to your hand."
+  },
+  "${modID}:GigaImpact": {
+    "NAME": "Giga Impact",
+    "DESCRIPTION": "Deal !D! Damage. Cannot attack next turn."
+  }
+}

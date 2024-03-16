@@ -1,0 +1,52 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Good Relic",
+    "FLAVOR": "Flavor text displayed in detailed relic view.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. [E] is an energy icon."
+    ]
+  },
+  "${modID}:ShowtanStarterRelic": {
+    "NAME": "First!",
+    "FLAVOR": "First for Specs Weedle!",
+    "DESCRIPTIONS": [
+      "At the start of the combat draw #b",
+      " additional card and channel 1 #y${modID}:Weedle Orb. Heal #b",
+      " HP at the end of combat."
+    ]
+  },
+  "${modID}:Hoge": {
+    "NAME": "Hoge",
+    "FLAVOR": "Hoge my beloved...",
+    "DESCRIPTIONS": [
+      "When you would die, heal to #b",
+      " HP instead (works once)."
+    ]
+  },
+  "${modID}:TwoChamps": {
+    "NAME": "Two Champs?",
+    "FLAVOR": "Oh great, two of them. There's been another schism.",
+    "DESCRIPTIONS": [
+      "At the start of the combat draw #b",
+      " additional cards, gain #b",
+      " orb slots, and channel 2 #y${modID}:Weedle Orbs. Heal #b",
+      " HP at the end of combat."
+    ]
+  },
+  "${modID}:SneakyPebbles": {
+    "NAME": "Sneaky Pebbles",
+    "FLAVOR": "Part of a Smogon handshake",
+    "DESCRIPTIONS": [
+      "At the start of combat normal enemies lose #b",
+      "% of their HP"
+    ]
+  },
+  "${modID}:ShiftyBar": {
+    "NAME": "Shifty Bar",
+    "FLAVOR": "I'm never getting a drink there again...",
+    "DESCRIPTIONS": [
+      "Add #b",
+      " Shivs to your hand whenever you drink a potion."
+    ]
+  }
+}
