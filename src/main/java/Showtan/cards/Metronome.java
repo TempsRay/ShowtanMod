@@ -29,14 +29,8 @@ public class Metronome extends BaseCard{
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         double r = Math.random();
-        AbstractCard c;
-        if (r < 0.33) {
-            c = AbstractDungeon.returnTrulyRandomCardInCombat(CardType.ATTACK).makeCopy();
-        } else if (r < 0.66) {
-            c = AbstractDungeon.returnTrulyRandomCardInCombat(CardType.SKILL).makeCopy();
-        } else {
-            c = AbstractDungeon.returnTrulyRandomCardInCombat(CardType.POWER).makeCopy();
-        }
+        AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat();
+
         c.setCostForTurn(0);
         addToBot(new MakeTempCardInHandAction(c, true));
     }

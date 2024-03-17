@@ -5,9 +5,12 @@ import Showtan.cards.NewChamp;
 import Showtan.cards.Strike;
 import Showtan.cards.Weedle;
 import Showtan.relics.ShowtanStarterRelic;
+import Showtan.vfx.VictoryConfettiEffect;
+import Showtan.vfx.VictoryGlow;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.AbstractAnimation;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
@@ -18,16 +21,18 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
 import java.util.ArrayList;
+import java.util.List;
 
-import static Showtan.ShowtanMod.characterPath;
-import static Showtan.ShowtanMod.makeID;
+import static Showtan.ShowtanMod.*;
 
 public class ShowtanCharacter extends CustomPlayer {
     //Stats
@@ -36,6 +41,8 @@ public class ShowtanCharacter extends CustomPlayer {
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 3;
+    public static float update_timer = 0;
+    public static boolean glow_fade = false;
 
     //Strings
     private static final String ID = makeID("Showtan"); //This should match whatever you have in the CharacterStrings.json file
@@ -97,6 +104,7 @@ public class ShowtanCharacter extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
         retVal.add(NewChamp.ID);
         retVal.add(Weedle.ID);
 
@@ -131,8 +139,11 @@ public class ShowtanCharacter extends CustomPlayer {
         //These attack effects will be used when you attack the heart.
         return new AbstractGameAction.AttackEffect[] {
                 AbstractGameAction.AttackEffect.SLASH_VERTICAL,
-                AbstractGameAction.AttackEffect.SLASH_HEAVY,
-                AbstractGameAction.AttackEffect.BLUNT_HEAVY
+                AbstractGameAction.AttackEffect.FIRE,
+                AbstractGameAction.AttackEffect.LIGHTNING,
+                AbstractGameAction.AttackEffect.SLASH_HORIZONTAL,
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL,
+                AbstractGameAction.AttackEffect.POISON
         };
     }
 
@@ -212,5 +223,30 @@ public class ShowtanCharacter extends CustomPlayer {
     public AbstractPlayer newInstance() {
         //Makes a new instance of your character class.
         return new ShowtanCharacter();
+    }
+
+    @Override
+    public List<CutscenePanel> getCutscenePanels() {
+        List<CutscenePanel> panels = new ArrayList<>();
+
+        panels.add(new CutscenePanel("Showtan/images/ending/ending1.png"));
+        panels.add(new CutscenePanel("Showtan/images/ending/ending2.png"));
+        panels.add(new CutscenePanel("Showtan/images/ending/ending3.png"));
+
+        return panels;
+    }
+
+    @Override
+    public void updateVictoryVfx(ArrayList<AbstractGameEffect> effects) {
+        if (!glow_fade) {
+            effects.add(new VictoryGlow());
+            glow_fade = true;
+        }
+
+        update_timer += Gdx.graphics.getDeltaTime();
+
+        for (float i = 0; i + (1.0 / 30.0) <= update_timer; update_timer -= (1.0 / 30.0)) {
+            effects.add(new VictoryConfettiEffect());
+        }
     }
 }

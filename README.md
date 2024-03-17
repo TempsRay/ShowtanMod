@@ -1,36 +1,26 @@
-# Basic Mod
+# Showtan Mod
 
-This is an empty Slay the Spire mod + a modding tutorial.
+This is a mod to play as [Showtan](https://www.twitch.tv/showtansd) in Slay the Spire.
 
-This tutorial will help with setup and the basics of Slay the Spire modding, but it will not teach you Java. If you know nothing of Java or programming in general, you are strongly recommended to look up a free online course and do at least some of it. It is possible to do modding with almost no proper knowledge, but it will make things much more difficult.
-
----
-
-## Check the wiki to get started:
-
-https://github.com/Alchyr/BasicMod/wiki
+This mod is filled with references to the various memes and references of the character.
 
 ---
 
-## Know what you're doing?
+## Cards
 
-You can still use this mod as a base, or you could use another template like https://github.com/DarkVexon/ProTemplate
-
-You can find more options in the pins of the #modding-technical channel in the Slay the Spire discord server.
+[Here is a spreadsheet of the cards and mechanics](https://docs.google.com/spreadsheets/d/1pNFCJNtd2jU2WuabIZ5s34uX3lzGkppxagT59Q602IQ/edit?usp=sharing)
 
 ---
 
-### Some HD Slay the Spire art assets (courtesy of Gremious, creator of DefaultMod):
+## Todo-list
 
-Includes:
-- Empty Relic Template feat. empty bottle
-- Empty Card Template
-- Color-Changable cardback
-- A couple of HD Monster vectors (Louse, Nob, Sentry, Sneaky Gremlin)
-- A coupe of HD items (J.A.X., A Coin)
-- 2 people silhouettes
-- A curse Background
-
-https://github.com/Gremious/StS-DefaultModBase#some-hd-slay-the-spire-art-assets
+- [ ] Cards: (59/75)
+- [ ] Relics: (8/???)
+- [ ] Potions: (5/???)
+- [ ] Ending (0/4)
+- [ ] Art improvements (Character select, icon, badge)
+- [ ] Art improvements (general)
+- [ ] Balance improvements
+- [ ] Polish
 
 ---

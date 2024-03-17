@@ -25,6 +25,7 @@ public class Leftovers extends BaseCard{
     public Leftovers() {
         super(ID, info);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        tags.add(CardTags.HEALING);
     }
 
     @Override

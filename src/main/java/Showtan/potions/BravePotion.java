@@ -29,7 +29,7 @@ public class BravePotion extends BasePotion {
 
 
     public BravePotion() {
-        super(ID, 2, PotionRarity.UNCOMMON, PotionSize.SPHERE, LIQUID_COLOR, HYBRID_COLOR, SPOTS_COLOR);
+        super(ID, 2, PotionRarity.RARE, PotionSize.SPHERE, LIQUID_COLOR, HYBRID_COLOR, SPOTS_COLOR);
         this.isThrown = false;
         this.targetRequired = false;
         playerClass = ShowtanCharacter.Enums.SHOWTAN;

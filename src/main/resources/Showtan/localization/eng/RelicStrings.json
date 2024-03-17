@@ -48,5 +48,27 @@
       "Add #b",
       " Shivs to your hand whenever you drink a potion."
     ]
+  },
+  "${modID}:Synchronize": {
+    "NAME": "Synchronize",
+    "FLAVOR": "no u",
+    "DESCRIPTIONS": [
+      "When you become Weakened or Vulnerable apply #b",
+      " Weak or Vulnerable to ALL enemies."
+    ]
+  },
+  "${modID}:Speedrun": {
+    "NAME": "Speedrunning",
+    "FLAVOR": "The current wr strat is to focus on just one Pokemon.",
+    "DESCRIPTIONS": [
+      "Gain 1 energy at the start of each turn. NL You only have 1 orb slot."
+    ]
+  },
+  "${modID}:RepeatBall": {
+    "NAME": "Repeat Ball",
+    "FLAVOR": "What do you mean that's not how it works?",
+    "DESCRIPTIONS": [
+      "Your rightmost orb triggers its passive an additional time."
+    ]
   }
 }
