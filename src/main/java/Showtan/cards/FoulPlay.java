@@ -43,7 +43,7 @@ public class FoulPlay extends BaseCard{
             this.addToBot(new ApplyPowerAction(p, p, new LoseStrengthPower(p, strengthAmount), strengthAmount));
 
         }
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
     @Override

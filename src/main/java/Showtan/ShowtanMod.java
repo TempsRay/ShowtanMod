@@ -60,6 +60,10 @@ public class ShowtanMod implements
 
     private static final Color cardColor = new Color(255f/255f, 192f/255f, 203f/255f, 1f);
 
+    public static String getModID() {
+        return modID;
+    }
+
     //This is used to prefix the IDs of various objects like cards and relics,
     //to avoid conflicts between different mods using the same name for things.
     public static String makeID(String id) {

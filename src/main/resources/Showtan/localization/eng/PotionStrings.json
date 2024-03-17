@@ -35,5 +35,13 @@
       "Apply #b",
       " Weak, Vulnerable, and Poison to target."
     ]
+  },
+  "${modID}:Zap7Potion": {
+    "NAME": "Zap7 Potion",
+    "DESCRIPTIONS": [
+      "Deal #b",
+      " damage #b",
+      " times."
+    ]
   }
 }

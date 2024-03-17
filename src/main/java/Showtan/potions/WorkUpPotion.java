@@ -23,7 +23,7 @@ public class WorkUpPotion extends BasePotion {
 
 
     public WorkUpPotion() {
-        super(ID, 1, PotionRarity.COMMON, PotionSize.S, LIQUID_COLOR, HYBRID_COLOR, SPOTS_COLOR);
+        super(ID, 1, PotionRarity.UNCOMMON, PotionSize.S, LIQUID_COLOR, HYBRID_COLOR, SPOTS_COLOR);
         this.isThrown = false;
         this.targetRequired = false;
         playerClass = ShowtanCharacter.Enums.SHOWTAN;
