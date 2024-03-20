@@ -27,6 +27,8 @@ public class Toxic extends BaseCard{
     public Toxic() {
         super(ID, info);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
+        this.showEvokeValue = true;
+        this.showEvokeOrbCount = 1;
     }
 
     @Override

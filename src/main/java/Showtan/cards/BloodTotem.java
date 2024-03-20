@@ -21,20 +21,22 @@ public class BloodTotem extends BaseCard{
     );
     private static final int BLOCK = 7;
     private static final int UPG_BLOCK = 3;
+    private static final int MAGIC_NUMBER = 2;
     public static final String ID = makeID("BloodTotem");
     public BloodTotem() {
         super(ID, info);
         setBlock(BLOCK, UPG_BLOCK);
-
+        setMagic(MAGIC_NUMBER);
         this.showEvokeValue = true;
-        this.showEvokeOrbCount = 1;
+        this.showEvokeOrbCount = magicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new ChannelAction(new TotemOrb()));
-        addToBot(new ChannelAction(new TotemOrb()));
+        for (int i = 0; i < magicNumber; i++) {
+            addToBot(new ChannelAction(new TotemOrb()));
+        }
     }
 
     @Override

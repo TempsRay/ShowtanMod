@@ -28,6 +28,8 @@ public class OUStall extends BaseCard{
     public OUStall() {
         super(ID, info);
         setBlock(BLOCK_NUMBER, UPG_BLOCK_NUMBER);
+        this.showEvokeValue = true;
+        this.showEvokeOrbCount = 1;
     }
 
     @Override

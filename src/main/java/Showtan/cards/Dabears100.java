@@ -27,6 +27,14 @@ public class Dabears100 extends BaseCard{
     public Dabears100() {
         super(ID, info);
         setMagic(BASE_MAGICNUMBER, UPG_MAGICNUMBER);
+        this.showEvokeValue = true;
+        this.showEvokeOrbCount = this.magicNumber;
+    }
+
+    @Override
+    public void update() {
+        this.showEvokeOrbCount = this.magicNumber;
+        super.update();
     }
 
     @Override

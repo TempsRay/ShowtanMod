@@ -25,27 +25,27 @@
     "NAMES": [
       "Weedle"
     ],
-    "DESCRIPTION": "Orb: Deals damage to ALL enemies each turn and when evoked."
+    "DESCRIPTION": "Orb: Deals damage to ALL enemies each turn 3x when evoked."
   },
   {
     "PROPER_NAME": "Brave",
     "NAMES": [
       "Brave"
     ],
-    "DESCRIPTION": "Orb: Deals massive damage when evoked."
+    "DESCRIPTION": "Orb: Deals massive damage (20) when evoked."
   },
   {
     "PROPER_NAME": "Koffing",
     "NAMES": [
       "Koffing"
     ],
-    "DESCRIPTION": "Orb: Inflicts poison to ALL enemies each turn and when evoked."
+    "DESCRIPTION": "Orb: Inflicts poison to ALL enemies each turn and 2x when evoked."
   },
   {
     "PROPER_NAME": "Totem",
     "NAMES": [
       "Totem"
     ],
-    "DESCRIPTION": "Orb: Grants Block each turn. Deals damage when evoked."
+    "DESCRIPTION": "Orb: Grants Block each turn. Deals damage when evoked. Damage increases each turn."
   }
 ]

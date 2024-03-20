@@ -29,7 +29,8 @@ public class SoBrave extends BaseCard{
     public SoBrave() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
-
+        this.showEvokeValue = true;
+        this.showEvokeOrbCount = 1;
     }
 
     @Override

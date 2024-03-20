@@ -45,11 +45,14 @@ public class Hoge extends BaseRelic implements OnPlayerDeathRelic {
 
     @Override
     public boolean onPlayerDeath(AbstractPlayer abstractPlayer, DamageInfo damageInfo) {
-        this.flash();
-        this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        if (this.counter != -2) {
+            this.flash();
+            this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
 
-        AbstractDungeon.player.heal(this.HEAL_AMT, true);
-        this.setCounter(-2);
-        return false;
+            AbstractDungeon.player.heal(this.HEAL_AMT, true);
+            this.setCounter(-2);
+            return false;
+        }
+        return true;
     }
 }

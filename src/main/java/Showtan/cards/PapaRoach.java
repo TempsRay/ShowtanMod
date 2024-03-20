@@ -36,7 +36,8 @@ public class PapaRoach extends BaseCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        AbstractGameAction.AttackEffect attackEffect = damage < magicNumber ? AbstractGameAction.AttackEffect.BLUNT_LIGHT : AbstractGameAction.AttackEffect.BLUNT_HEAVY;
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), attackEffect));
         if (this.damage < this.magicNumber) {
             addToBot(new ModifyDamageAction(this.uuid, this.magicNumber));
         }

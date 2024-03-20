@@ -5,6 +5,7 @@ import Showtan.character.ShowtanCharacter;
 import Showtan.util.CardStats;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class NewChamp extends BaseCard{
@@ -24,8 +25,15 @@ public class NewChamp extends BaseCard{
         super(ID, info);
         setMagic(MAGIC_NUMBER);
         setExhaust(true);
+        this.showEvokeValue = this.upgraded;
+        this.showEvokeOrbCount = 0;
     }
 
+    @Override
+    public void update() {
+        this.showEvokeValue = this.upgraded;
+        super.update();
+    }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
