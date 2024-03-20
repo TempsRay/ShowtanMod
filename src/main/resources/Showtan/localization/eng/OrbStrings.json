@@ -12,7 +12,7 @@
   "${modID}:WeedleOrb": {
     "NAME": "Specs Weedle",
     "DESCRIPTION": [
-      "#yPassive: At the start of your turn, deal #b",
+      "#yPassive: At the end of your turn, deal #b",
       " damage to all enemies.",
       " NL #yEvoke: Deal #b",
       " damage to all enemies."
@@ -21,7 +21,7 @@
   "${modID}:TotemOrb": {
     "NAME": "Blood Totem",
     "DESCRIPTION": [
-      "#yPassive: At the start of your turn, gain #b",
+      "#yPassive: At the end of your turn, gain #b",
       " block.",
       " NL #yEvoke: Deal #b",
       " damage to the enemy with the lowest HP.",
@@ -40,7 +40,7 @@
   "${modID}:KoffingOrb": {
     "NAME": "Dogars",
     "DESCRIPTION": [
-      "#yPassive: Inflict #b",
+      "#yPassive: At the end of your turn, inflict #b",
       " Poison to ALL enemies.",
       " NL #yEvoke: Inflict #b",
       " Poison to ALL enemies."
