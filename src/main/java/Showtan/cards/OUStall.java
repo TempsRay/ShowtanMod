@@ -3,14 +3,12 @@ package Showtan.cards;
 import Showtan.character.ShowtanCharacter;
 import Showtan.orbs.KoffingOrb;
 import Showtan.util.CardStats;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.unique.DiscardPileToTopOfDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.PoisonPower;
 
 public class OUStall extends BaseCard{
 

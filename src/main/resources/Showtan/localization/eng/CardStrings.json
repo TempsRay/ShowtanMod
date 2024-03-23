@@ -148,11 +148,6 @@
     "DESCRIPTION": "Discard your hand. Remove all orbs. Draw !M! cards. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Discard your hand. Evoke all orbs. Draw !M! cards. NL Exhaust."
   },
-  "${modID}:FirstWeedle": {
-    "NAME": "First!",
-    "DESCRIPTION": "Channel !M! ${modID}:Weedle Orb.",
-    "UPGRADE_DESCRIPTION": "Channel !M! ${modID}:Weedle Orbs."
-  },
   "${modID}:Scald": {
     "NAME": "Scald",
     "DESCRIPTION": "Deal !D! damage. Inflict !M! Weak and Vulnerable."
@@ -232,8 +227,7 @@
   },
   "${modID}:ProudOfItsPower": {
     "NAME": "Stand Proud",
-    "DESCRIPTION": "When you take damage from your own card or when you get debuffed, draw !M! card.",
-    "UPG_DESCRIPTION": "When you take damage from your own card or when you get debuffed, draw !M! cards."
+    "DESCRIPTION": "When you take damage from your own card or when you get debuffed, gain !M! Strength."
   },
   "${modID}:OUStall": {
     "NAME": "OU Stall",
@@ -254,5 +248,44 @@
   "${modID}:GigaImpact": {
     "NAME": "Giga Impact",
     "DESCRIPTION": "Deal !D! Damage. Cannot attack next turn."
+  },
+  "${modID}:Shitmons": {
+    "NAME": "Shitmons",
+    "DESCRIPTION": "At the start of your turn add a random card to your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn add a random card to your hand."
+  },
+  "${modID}:PrepareForTrouble": {
+    "NAME": "Philly Greeting",
+    "DESCRIPTION": "Deal !D! damage. Add !M! Shiv to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Add !M! Shivs to your hand."
+  },
+  "${modID}:Dig": {
+    "NAME": "Dig",
+    "DESCRIPTION": "Draw !M! cards. Gain 1 Weak and 1 Frail."
+  },
+  "${modID}:BoltBeam": {
+    "NAME": "Bolt-Beam",
+    "DESCRIPTION": "Deal !D! damage. Channel 1 Lightning. NL Deal !D! damage. Channel 1 Frost."
+  },
+  "${modID}:KillAllNerds": {
+    "NAME": "KillAllNerds.exe",
+    "DESCRIPTION": "Deal !D! damage to ALL (including yourself)."
+  },
+  "${modID}:Punishment": {
+    "NAME": "Punishment",
+    "DESCRIPTION": "Deal !D! damage. Then deal !M! damage for each stack of buff the target has."
+  },
+  "${modID}:DragonThatClouds": {
+    "NAME": "Cloud Dragon",
+    "DESCRIPTION": "This turn gain !B! Block whenever you exhaust a card. Exhaust up to !M! cards in your hand."
+  },
+  "${modID}:Adaptability": {
+    "NAME": "Adaptability",
+    "DESCRIPTION": "When you take damage from your own card or when you get debuffed, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "When you take damage from your own card or when you get debuffed, draw !M! cards."
+  },
+  "${modID}:Standoff": {
+    "NAME": "Standoff",
+    "DESCRIPTION": "Gain !M! Strength for each enemy that intends to attack. NL Exhaust."
   }
 }

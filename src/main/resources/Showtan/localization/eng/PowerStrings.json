@@ -15,8 +15,8 @@
   "${modID}:ProudOfItsPowerPower": {
     "NAME": "Stand Proud",
     "DESCRIPTIONS": [
-      "Whenever you take damage from your own card or get debuffed, draw #b",
-      " card(s)"
+      "Whenever you take damage from your own card or get debuffed, gain #b",
+      " Strength."
     ]
   },
   "${modID}:SpikyShieldPower": {
@@ -24,6 +24,29 @@
     "DESCRIPTIONS": [
       "When attacked, deals #b",
       " damage back."
+    ]
+  },
+  "${modID}:ShitmonsPower": {
+    "NAME": "Shitmons",
+    "DESCRIPTIONS": [
+      "At the start of your turn add #b",
+      " random card to your hand.",
+      " random cards to your hand."
+    ]
+  },
+  "${modID}:AdaptabilityPower": {
+    "NAME": "Adaptability",
+    "DESCRIPTIONS": [
+      "Whenever you take damage from your own card or get debuffed, draw #b",
+      " card.",
+      " cards."
+    ]
+  },
+  "${modID}:DragonThatCloudsPower": {
+    "NAME": "Dragon That Clouds",
+    "DESCRIPTIONS": [
+      "Whenever you take exhaust a card this turn gain #b",
+      " block."
     ]
   }
 }

@@ -2,28 +2,21 @@ package Showtan.powers;
 
 import Showtan.ShowtanMod;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnReceivePowerPower;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 
-public class ProudOfItsPowerPower extends AbstractPower implements OnReceivePowerPower {
+public class AdaptabilityPower extends AbstractPower implements OnReceivePowerPower {
     public AbstractCreature source;
-    public static final String POWER_ID = ShowtanMod.makeID("ProudOfItsPowerPower");
+    public static final String POWER_ID = ShowtanMod.makeID("AdaptabilityPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public ProudOfItsPowerPower(AbstractCreature owner, AbstractCreature source, int amount) {
+    public AdaptabilityPower(AbstractCreature owner, AbstractCreature source, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -32,7 +25,7 @@ public class ProudOfItsPowerPower extends AbstractPower implements OnReceivePowe
         this.isTurnBased = false;
 
         updateDescription();
-        loadRegion("rupture");
+        loadRegion("evolve");
     }
 
     public void wasHPLost(DamageInfo info, int damageAmount) {
@@ -47,9 +40,17 @@ public class ProudOfItsPowerPower extends AbstractPower implements OnReceivePowe
     {
         if (power.type==PowerType.DEBUFF) {
             this.flash();
-            this.addToBot(new ApplyPowerAction(target, target, new StrengthPower(target, this.amount), this.amount));
             this.addToBot(new DrawCardAction(this.owner, this.amount));
         }
         return true;
+    }
+
+    @Override
+    public void updateDescription() {
+        if (this.amount > 1) {
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        } else {
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[2];
+        }
     }
 }
