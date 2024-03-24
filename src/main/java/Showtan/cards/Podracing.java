@@ -18,7 +18,7 @@ public class Podracing extends BaseCard{
             CardTarget.SELF,
             1
     );
-    private static final int BLOCK = 11;
+    private static final int BLOCK = 12;
     private static final int UPG_BLOCK = 3;
     public static final String ID = makeID("Podracing");
     public Podracing() {

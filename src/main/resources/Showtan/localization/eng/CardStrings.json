@@ -31,7 +31,7 @@
   },
   "${modID}:Sleeping": {
     "NAME": "Rest",
-    "DESCRIPTION": "Gain !B! Block. Cannot gain Block from card effects for the rest of the turn."
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Frail."
   },
   "${modID}:SpikyShield": {
     "NAME": "Spiky Shield",
@@ -276,7 +276,7 @@
     "DESCRIPTION": "Deal !D! damage. Then deal !${modID}:secondary_damage! damage for each stack of buff the target has."
   },
   "${modID}:DragonThatClouds": {
-    "NAME": "Cloud Dragon",
+    "NAME": "Dragon Clouding",
     "DESCRIPTION": "This turn gain !B! Block whenever you exhaust a card. Exhaust up to !M! cards in your hand."
   },
   "${modID}:Adaptability": {

@@ -22,7 +22,7 @@ public class DrunkenFist extends BaseCard{
             1
     );
 
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 12;
     private static final int UPG_DAMAGE = 3;
     private static final int MAGIC_NUMBER = 1;
 
