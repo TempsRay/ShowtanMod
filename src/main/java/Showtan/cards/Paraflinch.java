@@ -3,7 +3,9 @@ package Showtan.cards;
 import Showtan.character.ShowtanCharacter;
 import Showtan.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -35,7 +37,7 @@ public class Paraflinch extends BaseCard{
         setMagic(MAGIC_NUMBER);
     }
 
-    public boolean playerHasDebuff() {
+    public static boolean playerHasDebuff() {
         Iterator var1 = AbstractDungeon.player.powers.iterator();
         while (var1.hasNext()) {
             AbstractPower p = (AbstractPower)var1.next();

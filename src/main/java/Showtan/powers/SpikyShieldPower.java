@@ -49,9 +49,4 @@ public class SpikyShieldPower extends AbstractPower {
     public void updateDescription() {
         description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
-
-    public void onExhaust(AbstractCard card) {
-        flash();
-        this.addToBot(new DamageAllEnemiesAction((AbstractCreature)null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE, true));
-    }
 }

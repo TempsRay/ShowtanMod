@@ -1,10 +1,8 @@
 package Showtan.cards;
 
 import Showtan.character.ShowtanCharacter;
-import Showtan.orbs.KoffingOrb;
 import Showtan.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -20,7 +18,7 @@ public class Podracing extends BaseCard{
             CardTarget.SELF,
             1
     );
-    private static final int BLOCK = 11;
+    private static final int BLOCK = 12;
     private static final int UPG_BLOCK = 3;
     public static final String ID = makeID("Podracing");
     public Podracing() {

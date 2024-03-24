@@ -28,7 +28,6 @@ public class Metronome extends BaseCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        double r = Math.random();
         AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat();
 
         c.setCostForTurn(0);

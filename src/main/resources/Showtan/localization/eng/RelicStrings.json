@@ -61,7 +61,7 @@
     "NAME": "Speedrunning",
     "FLAVOR": "The current wr strat is to focus on just one Pokemon.",
     "DESCRIPTIONS": [
-      "Gain 1 energy at the start of each turn. NL You only have 1 orb slot."
+      "Gain 1 [E] at the start of each turn. NL You only have 1 orb slot."
     ]
   },
   "${modID}:RepeatBall": {
@@ -69,6 +69,13 @@
     "FLAVOR": "What do you mean that's not how it works?",
     "DESCRIPTIONS": [
       "Your rightmost orb triggers its passive an additional time."
+    ]
+  },
+  "${modID}:AdrenalineOrb": {
+    "NAME": "Adrenaline Orb",
+    "FLAVOR": "What do you mean that's not how it works?",
+    "DESCRIPTIONS": [
+      "At the start of your turn if you have any debuffs gain 1 [E]"
     ]
   }
 }

@@ -19,7 +19,7 @@ public class Shedinja extends BaseCard{
             CardTarget.SELF,
             1
     );
-    private static final int MAGIC_NUMBER = 4;
+    private static final int MAGIC_NUMBER = 3;
     private static final int UPG_MAGIC_NUMBER = -1;
     private static final int INTANGIBLE_COUNT = 1;
     public static final String ID = makeID("Shedinja");
