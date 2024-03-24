@@ -214,7 +214,7 @@
   },
   "${modID}:PukeBlood": {
     "NAME": "Puke Blood",
-    "DESCRIPTION": "Take 2 Damage. Inflict !M! Poison."
+    "DESCRIPTION": "Lose 2 HP. Inflict !M! Poison."
   },
   "${modID}:Hellfrog": {
     "NAME": "Hellfrog",
@@ -269,11 +269,11 @@
   },
   "${modID}:KillAllNerds": {
     "NAME": "KillAllNerds.exe",
-    "DESCRIPTION": "Deal !D! damage to ALL (including yourself)."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Take !M! damage."
   },
   "${modID}:Punishment": {
     "NAME": "Punishment",
-    "DESCRIPTION": "Deal !D! damage. Then deal !M! damage for each stack of buff the target has."
+    "DESCRIPTION": "Deal !D! damage. Then deal !${modID}:secondary_damage! damage for each stack of buff the target has."
   },
   "${modID}:DragonThatClouds": {
     "NAME": "Cloud Dragon",

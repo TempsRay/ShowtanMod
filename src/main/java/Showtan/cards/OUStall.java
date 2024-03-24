@@ -20,7 +20,7 @@ public class OUStall extends BaseCard{
             CardTarget.SELF,
             1
     );
-    private static final int BLOCK_NUMBER = 4;
+    private static final int BLOCK_NUMBER = 5;
     private static final int UPG_BLOCK_NUMBER = 3;
     public static final String ID = makeID("OUStall");
     public OUStall() {

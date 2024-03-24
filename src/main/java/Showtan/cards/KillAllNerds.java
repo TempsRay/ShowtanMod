@@ -27,19 +27,21 @@ public class KillAllNerds extends BaseCard{
 
     private static final int DAMAGE = 15;
     private static final int UPG_DAMAGE = 5;
+    private static final int MAGIC_NUMBER = 5;
 
     public static final String ID = makeID("KillAllNerds");
     public KillAllNerds() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        setMagic(MAGIC_NUMBER);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("ATTACK_HEAVY"));
         addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
-        addToBot(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+        addToBot(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, this.magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
     @Override

@@ -38,7 +38,7 @@ public class ProudOfItsPowerPower extends AbstractPower implements OnReceivePowe
     public void wasHPLost(DamageInfo info, int damageAmount) {
         if (damageAmount > 0 && info.owner == this.owner) {
             this.flash();
-            this.addToBot(new DrawCardAction(this.owner, this.amount));
+            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
         }
     }
 
@@ -48,8 +48,12 @@ public class ProudOfItsPowerPower extends AbstractPower implements OnReceivePowe
         if (power.type==PowerType.DEBUFF) {
             this.flash();
             this.addToBot(new ApplyPowerAction(target, target, new StrengthPower(target, this.amount), this.amount));
-            this.addToBot(new DrawCardAction(this.owner, this.amount));
         }
         return true;
+    }
+
+    @Override
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 }
