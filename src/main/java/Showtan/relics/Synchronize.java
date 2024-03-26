@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
@@ -44,20 +45,27 @@ public class Synchronize extends BaseRelic implements OnReceivePowerRelic {
     @Override
     public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature abstractCreature) {
         if (abstractPower.type == AbstractPower.PowerType.DEBUFF) {
-            if(abstractPower.ID.equals(WeakPower.POWER_ID)) {
-                this.flash();
-                for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                    this.addToBot(new RelicAboveCreatureAction(mo, this));
-                    this.addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new WeakPower(mo, DEBUFF_AMT, false), 1, true));
+            for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+                if (!m.isDeadOrEscaped()) {
+                    if (abstractPower.ID.equals(WeakPower.POWER_ID)) {
+                        this.flash();
+                        this.addToBot(new RelicAboveCreatureAction(m, this));
+                        this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, DEBUFF_AMT, false), 1, true));
+                    }
+                    if(abstractPower.ID.equals(VulnerablePower.POWER_ID)) {
+                        this.flash();
+                        this.addToBot(new RelicAboveCreatureAction(m, this));
+                        this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new VulnerablePower(m, DEBUFF_AMT, false), 1, true));
+                    }
+                    if(abstractPower.ID.equals(FrailPower.POWER_ID)) {
+                        this.flash();
+                        this.addToBot(new RelicAboveCreatureAction(m, this));
+                        this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new FrailPower(m, DEBUFF_AMT, false), 1, true));
+                    }
                 }
             }
-            if(abstractPower.ID.equals(VulnerablePower.POWER_ID)) {
-                this.flash();
-                for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
-                    this.addToBot(new RelicAboveCreatureAction(mo, this));
-                    this.addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, DEBUFF_AMT, false), 1, true));
-                }
-            }
+
+
         }
         return true;
     }

@@ -31,7 +31,7 @@ public class Punishment extends BaseCard{
     public Punishment() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
-        setCustomVar("secondary_damage", VariableType.DAMAGE,  2, 1);
+        setCustomVar("secondary_damage", VariableType.DAMAGE,  3, 1);
     }
 
     public static int getTargetBuffs(AbstractMonster m) {
@@ -40,7 +40,7 @@ public class Punishment extends BaseCard{
         while (var1.hasNext()) {
             AbstractPower p = (AbstractPower)var1.next();
             if (p.type == AbstractPower.PowerType.BUFF) {
-                totalBuffs += p.amount;
+                totalBuffs += 1;
             }
         }
         return totalBuffs;

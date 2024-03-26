@@ -18,11 +18,11 @@ public class BoltBeam extends BaseCard{
     private static final CardStats info = new CardStats(
             ShowtanCharacter.Enums.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.COMMON,
+            CardRarity.RARE,
             CardTarget.ENEMY,
             2
     );
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 8;
     private static final int UPG_DAMAGE = 2;
     public static final String ID = makeID("BoltBeam");
     public BoltBeam() {

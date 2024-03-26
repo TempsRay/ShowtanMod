@@ -4,6 +4,8 @@ import Showtan.ShowtanMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -34,6 +36,8 @@ public class SuckerPunchAction extends AbstractGameAction {
     public void update() {
         if (this.targetMonster != null && this.targetMonster.getIntentBaseDmg() >= 0) {
             this.addToBot(new DamageAction(this.targetMonster, new DamageInfo(this.player, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+            addToBot(new DrawCardAction(AbstractDungeon.player, 1));
+            addToBot(new GainEnergyAction(1));
         } else {
             AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, TEXT[0], true));
         }

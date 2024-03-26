@@ -22,7 +22,7 @@ public class GigaImpact extends BaseCard{
             2
     );
 
-    private static final int DAMAGE = 28;
+    private static final int DAMAGE = 34;
     private static final int UPG_DAMAGE = 6;
 
     public static final String ID = makeID("GigaImpact");

@@ -53,8 +53,8 @@
     "NAME": "Synchronize",
     "FLAVOR": "no u",
     "DESCRIPTIONS": [
-      "When you become Weakened or Vulnerable apply #b",
-      " Weak or Vulnerable to ALL enemies."
+      "When you become Weakened, Frail, or Vulnerable apply #b",
+      " that effect to ALL enemies."
     ]
   },
   "${modID}:Speedrun": {

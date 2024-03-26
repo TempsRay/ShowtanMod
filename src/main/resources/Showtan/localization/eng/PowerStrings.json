@@ -45,7 +45,7 @@
   "${modID}:DragonThatCloudsPower": {
     "NAME": "Dragon That Clouds",
     "DESCRIPTIONS": [
-      "Whenever you take exhaust a card this turn gain #b",
+      "Whenever you exhaust a card this turn gain #b",
       " block."
     ]
   }

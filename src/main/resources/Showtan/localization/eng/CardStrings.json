@@ -23,7 +23,7 @@
   },
   "${modID}:NumbThePain": {
     "NAME": "Numb The Pain",
-    "DESCRIPTION": "Gain !B! Block. Shuffle a Dazed into your draw pile."
+    "DESCRIPTION": "Gain !B! Block. Shuffle a Dazed into your discard pile."
   },
   "${modID}:CockyHelmet": {
     "NAME": "Cocky Helmet",
@@ -73,7 +73,7 @@
   },
   "${modID}:SuckerPunch": {
     "NAME": "Sucker Punch",
-    "DESCRIPTION": "Deal !D! damage. Only works if the enemy intends to attack."
+    "DESCRIPTION": "Deal !D! damage. Draw 1 card and gain [E] but only works if the enemy intends to attack."
   },
   "${modID}:BloodTotem": {
     "NAME": "Blood Totem",
@@ -112,7 +112,7 @@
   },
   "${modID}:SoBrave": {
     "NAME": "So Brave",
-    "DESCRIPTION": "Deal !D! damage. Channel 1 ${modID}:Brave orb."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Channel 1 ${modID}:Brave orb."
   },
   "${modID}:FocusBlast": {
     "NAME": "Focus Blast",
@@ -139,10 +139,6 @@
     "DESCRIPTION": "Channel X ${modID}:Weedle Orbs. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Channel X+1 ${modID}:Weedle Orbs. NL Exhaust."
   },
-  "${modID}:Celebrate": {
-    "NAME": "Celebrate!",
-    "DESCRIPTION": "Gain !M! Gold. NL Exhaust."
-  },
   "${modID}:NewChamp": {
     "NAME": "New Champ!",
     "DESCRIPTION": "Discard your hand. Remove all orbs. Draw !M! cards. NL Exhaust.",
@@ -158,7 +154,7 @@
   },
   "${modID}:Funbro": {
     "NAME": "Funbro",
-    "DESCRIPTION": "Deal !D! damage. Retain your hand next turn."
+    "DESCRIPTION": "Gain !B! Block. Retain your hand and block this turn."
   },
   "${modID}:Dogars": {
     "NAME": "D O G A R S",
@@ -174,7 +170,7 @@
   },
   "${modID}:DaysInIndia": {
     "NAME": "184 Days In India",
-    "DESCRIPTION": "Retain. Deal !D! damage. When Retained, increase damage by !M! this combat."
+    "DESCRIPTION": "Retain. Gain !B! Block. Deal !D! damage. When Retained, increase damage by !M! this combat."
   },
   "${modID}:BanefulBunker": {
     "NAME": "Baneful Bunker",
@@ -214,7 +210,7 @@
   },
   "${modID}:PukeBlood": {
     "NAME": "Puke Blood",
-    "DESCRIPTION": "Lose 2 HP. Inflict !M! Poison."
+    "DESCRIPTION": "Lose 2 HP. Inflict !M! Poison. Channel a ${modID}:Koffing."
   },
   "${modID}:Hellfrog": {
     "NAME": "Hellfrog",
@@ -223,7 +219,7 @@
   },
   "${modID}:Toxic": {
     "NAME": "Toxic",
-    "DESCRIPTION": "Inflict !M! Poison. Channel a ${modID}:Koffing."
+    "DESCRIPTION": "Inflict !M! Poison. Channel 2 ${modID}:Koffing."
   },
   "${modID}:ProudOfItsPower": {
     "NAME": "Stand Proud",
@@ -243,7 +239,7 @@
   },
   "${modID}:Reshiram": {
     "NAME": "Lubby Chudder",
-    "DESCRIPTION": "Deal !D! Damage !M! times. Add 2 Burns to your hand."
+    "DESCRIPTION": "Deal !D! Damage !M! times. Add 1 Burn to your hand."
   },
   "${modID}:GigaImpact": {
     "NAME": "Giga Impact",
@@ -269,11 +265,11 @@
   },
   "${modID}:KillAllNerds": {
     "NAME": "KillAllNerds.exe",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. Take !M! damage."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Take !M! damage. NL Exhaust."
   },
   "${modID}:Punishment": {
     "NAME": "Punishment",
-    "DESCRIPTION": "Deal !D! damage. Then deal !${modID}:secondary_damage! damage for each stack of buff the target has."
+    "DESCRIPTION": "Deal !D! damage. Then deal !${modID}:secondary_damage! damage for each buff the target has."
   },
   "${modID}:DragonThatClouds": {
     "NAME": "Dragon Clouding",

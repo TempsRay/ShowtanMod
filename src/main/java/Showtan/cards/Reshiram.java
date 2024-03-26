@@ -37,7 +37,7 @@ public class Reshiram extends BaseCard{
         for (int i = 0; i < magicNumber; i++) {
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
         }
-        addToBot(new MakeTempCardInHandAction(new Burn(), 2));
+        addToBot(new MakeTempCardInHandAction(new Burn(), 1));
     }
 
     @Override
