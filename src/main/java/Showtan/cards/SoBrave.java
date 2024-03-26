@@ -5,6 +5,7 @@ import Showtan.orbs.BraveOrb;
 import Showtan.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -18,7 +19,7 @@ public class SoBrave extends BaseCard{
             ShowtanCharacter.Enums.CARD_COLOR,
             CardType.ATTACK,
             CardRarity.COMMON,
-            CardTarget.ENEMY,
+            CardTarget.ALL_ENEMY,
             2
     );
 
@@ -35,7 +36,7 @@ public class SoBrave extends BaseCard{
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.FIRE));
         addToBot(new ChannelAction(new BraveOrb()));
     }
 

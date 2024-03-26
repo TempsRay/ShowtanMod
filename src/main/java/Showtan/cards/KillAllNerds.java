@@ -20,12 +20,12 @@ public class KillAllNerds extends BaseCard{
     private static final CardStats info = new CardStats(
             ShowtanCharacter.Enums.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.UNCOMMON,
+            CardRarity.RARE,
             CardTarget.ALL,
             1
     );
 
-    private static final int DAMAGE = 15;
+    private static final int DAMAGE = 18;
     private static final int UPG_DAMAGE = 5;
     private static final int MAGIC_NUMBER = 5;
 
@@ -34,6 +34,7 @@ public class KillAllNerds extends BaseCard{
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(MAGIC_NUMBER);
+        setExhaust(true);
     }
 
     @Override

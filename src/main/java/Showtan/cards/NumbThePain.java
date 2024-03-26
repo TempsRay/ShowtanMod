@@ -3,7 +3,7 @@ package Showtan.cards;
 import Showtan.character.ShowtanCharacter;
 import Showtan.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -31,7 +31,7 @@ public class NumbThePain extends BaseCard{
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p, p, block));
-        addToBot(new MakeTempCardInDrawPileAction(new Dazed(), 1, true, true));
+        addToBot(new MakeTempCardInDiscardAction(new Dazed(), 1));
     }
 
     @Override

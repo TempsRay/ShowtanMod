@@ -14,12 +14,12 @@ public class Podracing extends BaseCard{
     private static final CardStats info = new CardStats(
             ShowtanCharacter.Enums.CARD_COLOR,
             CardType.SKILL,
-            CardRarity.COMMON,
+            CardRarity.RARE,
             CardTarget.SELF,
             1
     );
-    private static final int BLOCK = 12;
-    private static final int UPG_BLOCK = 3;
+    private static final int BLOCK = 20;
+    private static final int UPG_BLOCK = 5;
     public static final String ID = makeID("Podracing");
     public Podracing() {
         super(ID, info);

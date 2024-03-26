@@ -38,6 +38,10 @@ public class DragonThatCloudsPower extends AbstractPower {
         this.addToBot(new GainBlockAction(this.owner, this.amount, Settings.FAST_MODE));
     }
 
+    public void atStartOfTurn() {
+        this.addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, DragonThatCloudsPower.POWER_ID));
+    }
+
     @Override
     public void updateDescription() {
         description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];

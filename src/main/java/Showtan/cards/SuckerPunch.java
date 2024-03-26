@@ -16,12 +16,12 @@ public class SuckerPunch extends BaseCard{
     private static final CardStats info = new CardStats(
             ShowtanCharacter.Enums.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.COMMON,
+            CardRarity.UNCOMMON,
             CardTarget.ENEMY,
             1
     );
 
-    private static final int DAMAGE = 11;
+    private static final int DAMAGE = 5;
     private static final int UPG_DAMAGE = 3;
 
     public static final String ID = makeID("SuckerPunch");

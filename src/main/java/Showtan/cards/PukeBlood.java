@@ -1,10 +1,12 @@
 package Showtan.cards;
 
 import Showtan.character.ShowtanCharacter;
+import Showtan.orbs.KoffingOrb;
 import Showtan.util.CardStats;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -37,6 +39,7 @@ public class PukeBlood extends BaseCard{
         }
         this.addToBot(new LoseHPAction(p, p, HP_LOSS));
         addToBot(new ApplyPowerAction(m, p, new PoisonPower(m, p, this.magicNumber), this.magicNumber));
+        addToBot(new ChannelAction(new KoffingOrb()));
     }
 
     @Override

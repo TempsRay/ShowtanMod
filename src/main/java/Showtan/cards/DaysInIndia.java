@@ -4,6 +4,7 @@ import Showtan.character.ShowtanCharacter;
 import Showtan.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -17,18 +18,21 @@ public class DaysInIndia extends BaseCard{
             CardType.ATTACK,
             CardRarity.UNCOMMON,
             CardTarget.ENEMY,
-            1
+            2
     );
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 3;
+    private static final int BLOCK = 5;
+    private static final int UPG_BLOCK = 3;
     private static final int MAGIC_NUMBER = 2;
-    private static final int UPG_MAGIC_NUMBER = 2;
+    private static final int UPG_MAGIC_NUMBER = 1;
 
     public static final String ID = makeID("DaysInIndia");
     public DaysInIndia() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        setBlock(BLOCK, UPG_BLOCK);
         setMagic(MAGIC_NUMBER, UPG_MAGIC_NUMBER);
         this.selfRetain = true;
     }
@@ -36,10 +40,12 @@ public class DaysInIndia extends BaseCard{
     @Override
     public void onRetained() {
         this.upgradeDamage(this.magicNumber);
+        this.upgradeBlock(this.magicNumber);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new GainBlockAction(p, p, block));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
